@@ -26,6 +26,8 @@ function logoAnimationContructor() {
     var alphaLogo = 0;
     var first = true;
 
+    var isMobile = window.mobileAndTabletcheck();
+
     function loadImage(startFrame) {
         var img = new Image;
 
@@ -338,8 +340,6 @@ function logoAnimationContructor() {
 
         showSubTitle();
 
-        console.log(positonCanvas.bottom, positonCanvasFixed.bottom);
-
         if (positonCanvas.bottom <= positonCanvasFixed.bottom && !activeMenu) {
             showMenuFixed(true);
             activeMenu = true;
@@ -383,12 +383,15 @@ function logoAnimationContructor() {
             resizeCanvas();
             ajustCardAnimation();
 
-            ajustMenu();
+            if (!isMobile)
+                ajustMenu();
 
         }, false);
 
         window.addEventListener("scroll", function (e) {
-            ajustMenu();
+
+            if (!isMobile)
+                ajustMenu();
         });
 
     };
