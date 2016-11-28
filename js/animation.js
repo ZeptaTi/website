@@ -15,8 +15,6 @@ function logoAnimationContructor() {
     var endFrame = 200;
 
     var activeMenu = false;
-    var logoMenuY = 755.2120859965137;
-    var logoMenuHeight = 39.83739837398373;
 
     var backgroundHeight = 0;
     var backgroundWidth = 0;
@@ -286,7 +284,6 @@ function logoAnimationContructor() {
 
         card.style.display = "block";
         card.style.position = "absolute";
-        card.style.top = 20 + "px";
     };
 
     function showCardAnimation() {
