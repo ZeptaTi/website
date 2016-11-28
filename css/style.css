@@ -1,0 +1,120 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    color: #cfd2da;
+    background-color: black;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    overflow: hidden;
+}
+
+div {
+    background-color: transparent;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-height: 800px;
+    border-bottom: 1px solid #212121;
+    border-top: 1px solid #1f1f1f;
+}
+
+.menuFixed {
+    position: fixed;
+    background-color: transparent;
+    border-bottom: 1px solid red;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.container > canvas {
+    width: 100%;
+}
+
+.menuFixed > canvas {
+    width: 100%;
+    display: none;
+}
+
+.subtitle {
+    position: absolute;
+    font-size: 27px;
+    font-weight: 100;
+    opacity: 0;
+}
+
+.projects {
+    padding: 100px;
+    min-height: 100%;
+    background-color: #2d3032;
+    border-top: 1px solid #3a3a3a;
+}
+
+.container > .card {
+    height: 120px;
+    background-color: #1b1b1b;
+    border: 1px solid #1f1f1f;
+    border-radius: 6px;
+    color: rgba(45, 48, 50, 0.67);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container > .card:hover {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: 1!important;
+    color: #333;
+    background-color: #1b1b1b;
+}
+
+.card div {
+    width: 100%;
+    padding: 8px 0px;
+    margin-top: 18px;
+    border-left: 1px solid rgba(45, 48, 50, 0.67);
+    border-right: 1px solid rgba(45, 48, 50, 0.67);
+    cursor: pointer;
+}
+
+.card div > hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(45, 48, 50, 0.67);
+    margin: 0;
+    padding: 0;
+}
+
+.card:hover div > hr,
+.card:hover div {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border-color: #525252;
+}
