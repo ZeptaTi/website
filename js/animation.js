@@ -329,6 +329,10 @@ function logoAnimationContructor() {
     }
 
     function ajustMenu() {
+
+        if (isMobile)
+            return;
+
         var scroll = getScroll();
 
         var h = canvasHeight * 0.20 * (canvasHeight - scroll / 1.23) / canvasHeight;
@@ -383,15 +387,13 @@ function logoAnimationContructor() {
             resizeCanvas();
             ajustCardAnimation();
 
-            if (!isMobile)
-                ajustMenu();
+            ajustMenu();
 
         }, false);
 
         window.addEventListener("scroll", function (e) {
 
-            if (!isMobile)
-                ajustMenu();
+            ajustMenu();
         });
 
     };
