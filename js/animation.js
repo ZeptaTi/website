@@ -450,5 +450,9 @@ function getContextFixed() {
 };
 
 function getScroll() {
+
+    if (isMobile)
+        return 0;
+
     return (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
 };
