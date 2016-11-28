@@ -64,14 +64,15 @@ div {
 .container > .card {
     height: 120px;
     background-color: #1b1b1b;
+    top: 0;
+    right: 0;
+    opacity: 0;
     border: 1px solid #1f1f1f;
     border-radius: 6px;
     color: rgba(45, 48, 50, 0.67);
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0px 20px;
-    right: 0;
-    opacity: 0;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;
@@ -116,4 +117,99 @@ div {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     border-color: #525252;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    p {
+        margin: 7px 0;
+    }
+    .container {
+        max-height: 320px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+    .container > .card {
+        height: 100px;
+        width: 169px;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 0px 10px;
+    }
+    .card div {
+        margin-top: 14px;
+    }
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    .subtitle {
+        background-color: black;
+    }
+}
+
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+}
+
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
 }
