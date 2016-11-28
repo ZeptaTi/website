@@ -123,15 +123,6 @@ div {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .subtitle {
-        background-color: black;
-    }
-}
-
-
-/* Smartphones (landscape) ----------- */
-
-@media only screen and (min-width: 321px) {
     p {
         margin: 7px 0;
     }
@@ -153,6 +144,11 @@ div {
         margin-top: 14px;
     }
 }
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {}
 
 
 /* Smartphones (portrait) ----------- */
