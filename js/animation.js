@@ -366,9 +366,6 @@ function logoAnimationContructor() {
         var container = getContainerCanvas();
 
         container.addEventListener("touchstart", onTouchStart, false);
-        container.addEventListener("touchend", onTouchEnd, false);
-        container.addEventListener("touchcancel", onTouchCancel, false);
-        container.addEventListener("touchleave", onTouchEnd, false);
         container.addEventListener("touchmove", onTouchMove, false);
 
     };
@@ -396,19 +393,6 @@ function logoAnimationContructor() {
         }
     };
 
-    function onTouchEnd(e) {
-
-        e.preventDefault();
-        var touches = e.changedTouches;
-        console.log('end');
-    };
-
-    function onTouchCancel(e) {
-        e.preventDefault();
-        var touches = e.changedTouches;
-        console.log('cancel');
-    };
-
     function onTouchMove(e) {
 
         var container = getContainerCanvas();
@@ -423,8 +407,10 @@ function logoAnimationContructor() {
 
             var offsets = container.getBoundingClientRect();
 
-            var posInit = offsets.left;
-            var posFinal = offsets.right;
+            var margin = 30;
+
+            var posInit = offsets.left + margin;
+            var posFinal = offsets.right - margin;
 
             var nextFrame = endFrame * ((100 * (touch.pageX - posInit)) / (posFinal - posInit)) / 100;
 
