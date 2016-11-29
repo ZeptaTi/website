@@ -143,6 +143,9 @@ div {
     .card div {
         margin-top: 14px;
     }
+    .projects {
+        padding: 30px;
+    }
 }
 
 
