@@ -84,7 +84,8 @@ function logoAnimationContructor() {
 
         first = false;
 
-        showCardAnimation();
+        if (!isMobile)
+            showCardAnimation();
     };
 
     function drawFrame() {
@@ -360,6 +361,77 @@ function logoAnimationContructor() {
             drawLogo();
     };
 
+    function startEventsTouch() {
+
+        var container = getContainerCanvas();
+
+        container.addEventListener("touchstart", onTouchStart, false);
+        container.addEventListener("touchend", onTouchEnd, false);
+        container.addEventListener("touchcancel", onTouchCancel, false);
+        container.addEventListener("touchleave", onTouchEnd, false);
+        container.addEventListener("touchmove", onTouchMove, false);
+
+    };
+
+    function onTouchStart(e) {
+
+        var container = getContainerCanvas();
+
+        e.preventDefault();
+
+        var touches = e.changedTouches;
+
+        for (var i = 0; i < touches.length; i++) {
+
+            var touch = touches[i];
+
+            var offsets = container.getBoundingClientRect();
+
+            var posInit = offsets.left;
+            var posFinal = offsets.right;
+
+            var nextFrame = endFrame * ((100 * (touch.pageX - posInit)) / (posFinal - posInit)) / 100;
+
+            loadImage(Math.round(nextFrame));
+        }
+    };
+
+    function onTouchEnd(e) {
+
+        e.preventDefault();
+        var touches = e.changedTouches;
+        console.log('end');
+    };
+
+    function onTouchCancel(e) {
+        e.preventDefault();
+        var touches = e.changedTouches;
+        console.log('cancel');
+    };
+
+    function onTouchMove(e) {
+
+        var container = getContainerCanvas();
+
+        e.preventDefault();
+
+        var touches = e.changedTouches;
+
+        for (var i = 0; i < touches.length; i++) {
+
+            var touch = touches[i];
+
+            var offsets = container.getBoundingClientRect();
+
+            var posInit = offsets.left;
+            var posFinal = offsets.right;
+
+            var nextFrame = endFrame * ((100 * (touch.pageX - posInit)) / (posFinal - posInit)) / 100;
+
+            loadImage(Math.round(nextFrame));
+        }
+    };
+
     var init = function () {
 
         resizeCanvas();
@@ -385,6 +457,7 @@ function logoAnimationContructor() {
         window.addEventListener("resize", function () {
 
             resizeCanvas();
+
             ajustCardAnimation();
 
             ajustMenu();
@@ -395,6 +468,9 @@ function logoAnimationContructor() {
 
             ajustMenu();
         });
+
+        if (isMobile)
+            startEventsTouch();
 
     };
 
@@ -414,6 +490,10 @@ function getCancelAnimationFrame() {
     return window.cancelAnimationFrame ||
         window.webkitCancelAnimationFrame ||
         window.mozCancelAnimationFrame;
+};
+
+function getContainerCanvas() {
+    return document.getElementById("containerLogo");
 };
 
 function getCanvas() {
