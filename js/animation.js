@@ -450,6 +450,16 @@ function logoAnimationContructor() {
 
         }, false);
 
+        window.addEventListener("orientationchange", function () {
+
+            resizeCanvas();
+
+            ajustCardAnimation();
+
+            ajustMenu();
+
+        }, false);
+
         window.addEventListener("scroll", function (e) {
 
             ajustMenu();
