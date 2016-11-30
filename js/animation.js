@@ -417,7 +417,8 @@ function logoAnimationContructor() {
 
         resizeCanvas();
 
-        ajustCardAnimation();
+        if (!isMobile)
+            ajustCardAnimation();
 
         loadImage();
 
@@ -427,7 +428,7 @@ function logoAnimationContructor() {
 
             if (isMobile)
                 return;
-            
+
             var offsets = timelineCard.getBoundingClientRect();
 
             var posInit = offsets.left - 0.40625;
