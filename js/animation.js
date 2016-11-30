@@ -43,7 +43,6 @@ function logoAnimationContructor() {
                 body[0].style.overflow = "auto";
             }
 
-
             background = img;
 
             backgroundHeight = this.height;
@@ -374,8 +373,6 @@ function logoAnimationContructor() {
 
         var container = getContainerCanvas();
 
-        e.preventDefault();
-
         var touches = e.changedTouches;
 
         for (var i = 0; i < touches.length; i++) {
@@ -396,8 +393,6 @@ function logoAnimationContructor() {
     function onTouchMove(e) {
 
         var container = getContainerCanvas();
-
-        e.preventDefault();
 
         var touches = e.changedTouches;
 
@@ -451,13 +446,7 @@ function logoAnimationContructor() {
         }, false);
 
         window.addEventListener("orientationchange", function () {
-
             resizeCanvas();
-
-            ajustCardAnimation();
-
-            ajustMenu();
-
         }, false);
 
         window.addEventListener("scroll", function (e) {

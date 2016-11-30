@@ -49,13 +49,12 @@ div {
 
 .subtitle {
     position: absolute;
-    font-size: 27px;
     font-weight: 100;
     opacity: 0;
 }
 
 .projects {
-    padding: 100px;
+    padding: 0 100px;
     min-height: 100%;
     background-color: #2d3032;
     border-top: 1px solid #3a3a3a;
@@ -119,73 +118,50 @@ div {
     border-color: #525252;
 }
 
+.container-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #dedede;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 250px;
+    padding: 13px;
+}
+
+.card-text > .title-card {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-text > .content-card {}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    p {
-        margin: 7px 0;
+    html,
+    body {
+        font-size: 1.125em;
     }
     .container {
+        min-height: 320px;
         max-height: 320px;
     }
-    .subtitle {
-        font-size: 15px;
-    }
-    .container > .card {
-        height: 100px;
-        width: 169px;
-        font-size: 12px;
-        margin-right: 5px;
-        margin-top: 5px;
-        padding: 0px 10px;
-    }
-    .card div {
-        margin-top: 14px;
-    }
     .projects {
-        padding: 30px;
+        padding: 0 10px;
     }
-}
-
-
-/* Smartphones (landscape) ----------- */
-
-@media only screen and (min-width: 321px) {}
-
-
-/* Smartphones (portrait) ----------- */
-
-@media only screen and (max-width: 320px) {
-    .subtitle {
-        background-color: black;
+    .container-flex {
+        flex-direction: column;
     }
-}
-
-
-/* iPads (portrait and landscape) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .subtitle {
-        background-color: black;
-    }
-}
-
-
-/* iPads (landscape) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .subtitle {
-        background-color: black;
-    }
-}
-
-
-/* iPads (portrait) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .subtitle {
-        background-color: black;
+    .card-text {
+        max-width: 100%;
+        margin-top: 10px;
     }
 }
 
@@ -194,15 +170,15 @@ div {
 
 @media only screen and (min-width: 1224px) {
     .subtitle {
-        background-color: black;
+        font-size: 27px;
     }
-}
-
-
-/* Large screens ----------- */
-
-@media only screen and (min-width: 1824px) {
-    /* Styles */
+    .container-flex {
+        flex-direction: row;
+    }
+    .card-text {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
 }
 
 
