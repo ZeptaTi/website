@@ -425,6 +425,9 @@ function logoAnimationContructor() {
 
         timelineCard.addEventListener("mousemove", function (e) {
 
+            if (isMobile)
+                return;
+            
             var offsets = timelineCard.getBoundingClientRect();
 
             var posInit = offsets.left - 0.40625;
