@@ -1,13 +1,23 @@
-html,
-body {
-    font-family: 'Roboto', sans-serif;
+/* MOBILE FIRST */
+
+* {
     margin: 0px;
     padding: 0px;
+}
+
+html,
+body {
+    width: 100%;
     height: 100%;
-    color: #cfd2da;
     background-color: black;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-size: normal;
+    line-height: 150%;
+    color: #cfd2da;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -25,9 +35,10 @@ div {
 
 .container {
     width: 100%;
-    max-height: 800px;
     border-bottom: 1px solid #212121;
     border-top: 1px solid #1f1f1f;
+    min-height: 320px;
+    max-height: 320px;
 }
 
 .menuFixed {
@@ -49,12 +60,14 @@ div {
 
 .subtitle {
     position: absolute;
+    font-size: 1.08rem;
+    line-height: 7px;
     font-weight: 100;
     opacity: 0;
 }
 
 .projects {
-    padding: 0 100px;
+    padding: 0 10px;
     min-height: 100%;
     background-color: #2d3032;
     border-top: 1px solid #3a3a3a;
@@ -122,69 +135,33 @@ div {
     display: flex;
     width: 100%;
     height: 100%;
+    flex-direction: column;
 }
 
 .card-text {
-    margin-top: 10px;
-    background-color: white;
+    background-color: #ebebeb;
     border: 1px solid #dedede;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 250px;
+    width: 100%;
+    margin-top: 10px;
     padding: 13px;
+    border-radius: 2px;
 }
 
 .card-text > .title-card {
     text-align: left;
-    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    line-height: 140%;
+    color: #7037c5;
+    font-weight: 600;
 }
 
-.card-text > .content-card {}
-
-
-/* Smartphones (portrait and landscape) ----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    html,
-    body {
-        font-size: 1.125em;
-    }
-    .container {
-        min-height: 320px;
-        max-height: 320px;
-    }
-    .projects {
-        padding: 0 10px;
-    }
-    .container-flex {
-        flex-direction: column;
-    }
-    .card-text {
-        max-width: 100%;
-        margin-top: 10px;
-    }
+.card-text > .content-card {
+    color: #666;
+    font-weight: 500;
 }
 
-
-/* Desktops and laptops ----------- */
-
-@media only screen and (min-width: 1224px) {
-    .subtitle {
-        font-size: 27px;
-    }
-    .container-flex {
-        flex-direction: row;
-    }
-    .card-text {
-        margin-top: 30px;
-        margin-left: 10px;
-    }
-}
-
-
-/* iPhone 4 ----------- */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-    /* Styles */
+.text {
+    font-size: 1.3rem;
+    line-height: 18px;
 }

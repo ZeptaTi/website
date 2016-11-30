@@ -14,6 +14,13 @@
 
 @font-face {
     font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
     src: local(fonts/Roboto/Roboto-Light.ttf);
     font-weight: 300;
     font-style: normal;
