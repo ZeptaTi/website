@@ -181,6 +181,9 @@ function logoAnimationContructor() {
 
     function ajustSubTitle(subTitle) {
 
+        if (!subTitle)
+            return;
+
         var h = canvasHeight * 0.20;
         var y = canvasHeight * 0.40;
 
@@ -454,6 +457,11 @@ function logoAnimationContructor() {
         }, false);
 
         window.addEventListener("scroll", function (e) {
+
+            if (isMobile) {
+                frame = 200;
+                return;
+            }
 
             ajustMenu();
         });
