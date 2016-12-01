@@ -45,7 +45,7 @@ div {
     max-height: 320px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .container {
         height: 500px;
         max-height: none;
@@ -104,7 +104,7 @@ div {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .subtitle {
         font-size: 1.9rem;
     }
@@ -180,7 +180,7 @@ div {
     border-top: 1px solid #3a3a3a;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .projects {
         padding: 0 15px;
     }
@@ -199,7 +199,7 @@ div {
     flex-direction: column;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .container-flex {
         flex-direction: row;
     }
@@ -214,7 +214,7 @@ div {
     border-radius: 2px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .card-text {
         flex-direction: row;
         margin-top: 20px;
@@ -257,7 +257,7 @@ div {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .card-text > .title-card {
         font-size: 1.55rem;
         letter-spacing: normal;
