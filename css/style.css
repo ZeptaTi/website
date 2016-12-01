@@ -12,7 +12,7 @@ body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: normal;
+    font-style: normal;
     line-height: 150%;
     color: #cfd2da;
     text-rendering: optimizeLegibility;
@@ -250,6 +250,13 @@ div {
     margin-bottom: 4px;
 }
 
+@media (min-width: 666px) {
+    .card-text > .title-card {
+        font-size: 1.4rem;
+        letter-spacing: normal;
+    }
+}
+
 @media (min-width:768px) {
     .card-text > .title-card {
         font-size: 1.55rem;
@@ -281,7 +288,7 @@ div {
     line-height: 21px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 666px) {
     .text {
         font-size: 1.1rem;
         line-height: 17px;
