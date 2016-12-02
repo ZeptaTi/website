@@ -1,8 +1,12 @@
 /* MOBILE FIRST */
 
+
+/* Resets */
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html,
@@ -33,9 +37,8 @@ div {
     display: block;
 }
 
-* {
-    box-sizing: border-box;
-}
+
+/* Resets end */
 
 .container {
     width: 100%;
@@ -100,7 +103,7 @@ div {
 
 @media (max-width: 360px) {
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
