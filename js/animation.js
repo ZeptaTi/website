@@ -280,7 +280,6 @@ function logoAnimationContructor() {
         loadImage(frame);
 
         ajustSubTitle(getSubTitle());
-
     };
 
     function ajustCardAnimation() {
