@@ -24,6 +24,41 @@ input {
     outline: none;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(fonts/Roboto/Roboto-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
 
 /* Resets end */
 
@@ -231,7 +266,7 @@ hr {
 .projects {
     padding: 0 10px;
     min-height: 100%;
-    background-color: #2d3032;
+    background-color: #575858;
     border-top: 1px solid #3a3a3a;
 }
 
@@ -261,8 +296,7 @@ hr {
 }
 
 .card-text {
-    background-color: #3e4042;
-    border: 1px solid rgba(70, 70, 72, 0.98);
+    background-color: #2b2c2d;
     width: 100%;
     margin-top: 10px;
     padding: 13px;
@@ -297,12 +331,11 @@ hr {
 
 .title-card {
     text-align: left;
-    font-size: 1.6rem;
-    letter-spacing: 0.02rem;
-    line-height: 180%;
-    color: #dedede;
-    font-weight: 600;
-    margin-bottom: 4px;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FF3D00;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .subtitle-card {
