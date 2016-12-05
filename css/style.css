@@ -352,6 +352,11 @@ hr {
     text-align: left;
     line-height: normal;
     color: #FF9800;
+    /*
+    color: #D4E157;
+    color: #26A69A;
+    color: #FF7043;
+    */
     letter-spacing: normal;
     margin-bottom: 10px;
 }
@@ -369,6 +374,9 @@ hr {
     .title-card {
         font-size: 33px;
     }
+    .subtitle-card {
+        font-size: 21px;
+    }
 }
 
 @media (min-width: 375px) {
@@ -384,7 +392,8 @@ hr {
         margin-bottom: 15px;
     }
     .subtitle-card {
-        font-size: 1.2rem;
+        font-size: 27px;
+        margin-bottom: 8px;
         letter-spacing: normal;
     }
 }
@@ -395,8 +404,8 @@ hr {
         letter-spacing: normal;
     }
     .subtitle-card {
-        font-size: 1.24rem;
-        letter-spacing: normal;
+        font-size: 28px;
+        line-height: 28px;
     }
 }
 
@@ -405,8 +414,8 @@ hr {
         font-size: 39px;
     }
     .subtitle-card {
-        font-size: 1.3rem;
-        letter-spacing: 0.02rem;
+        font-size: 29px;
+        line-height: 29px;
     }
 }
 
@@ -415,8 +424,8 @@ hr {
         font-size: 29px;
     }
     .subtitle-card {
-        font-size: 1.45rem;
-        letter-spacing: 0.02rem;
+        font-size: 26px;
+        line-height: 26px;
     }
 }
 
@@ -425,8 +434,8 @@ hr {
         font-size: 38px;
     }
     .subtitle-card {
-        font-size: 1.45rem;
-        letter-spacing: 0.02rem;
+        font-size: 28px;
+        line-height: 28px;
     }
 }
 
@@ -456,7 +465,7 @@ hr {
 
 @media (min-width: 1025px) {
     .text {
-        font-size: 18px;
+        font-size: 19px;
         line-height: 20px;
     }
 }
