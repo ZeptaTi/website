@@ -375,26 +375,35 @@ hr {
     font-family: 'Roboto';
     font-stretch: condensed;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 25px;
     text-align: left;
-    line-height: 44px;
-    letter-spacing: 0;
+    line-height: 25px;
+    letter-spacing: -1px;
     color: #FF9800;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .subtitle-card {
+    font-family: 'Roboto';
+    font-stretch: condensed;
     text-align: left;
     font-size: 20px;
-    color: #F4511E;
-    font-weight: 600;
+    font-weight: 400;
+    color: #FFA726;
     margin-bottom: 4px;
+}
+
+@media (min-width: 375px) {
+    .title-card {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 666px) {
     .title-card {
         font-size: 40px;
         letter-spacing: normal;
+        margin-bottom: 15px;
     }
     .subtitle-card {
         font-size: 1.2rem;
