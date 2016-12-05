@@ -396,6 +396,7 @@ hr {
 @media (min-width: 375px) {
     .title-card {
         font-size: 32px;
+        color: black;
     }
 }
 
