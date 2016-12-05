@@ -365,6 +365,12 @@ hr {
     margin-bottom: 4px;
 }
 
+@media (min-width: 360px) {
+    .title-card {
+        font-size: 33px;
+    }
+}
+
 @media (min-width: 375px) {
     .title-card {
         font-size: 34px;
