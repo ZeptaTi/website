@@ -372,14 +372,14 @@ hr {
 }
 
 .title-card {
-    font-family: 'Roboto';
+    font-family: 'Open Sans';
     font-stretch: condensed;
     font-weight: 400;
     font-size: 25px;
     text-align: left;
-    line-height: 25px;
-    letter-spacing: -1px;
+    line-height: normal;
     color: #FF9800;
+    letter-spacing: normal;
     margin-bottom: 10px;
 }
 
@@ -395,7 +395,7 @@ hr {
 
 @media (min-width: 375px) {
     .title-card {
-        font-size: 30px;
+        font-size: 34px;
     }
 }
 
@@ -424,8 +424,7 @@ hr {
 
 @media (min-width: 950px) {
     .title-card {
-        font-size: 33px;
-        line-height: 33px;
+        font-size: 39px;
     }
     .subtitle-card {
         font-size: 1.3rem;
@@ -435,7 +434,7 @@ hr {
 
 @media (min-width: 1025px) {
     .title-card {
-        font-size: 21px;
+        font-size: 29px;
     }
     .subtitle-card {
         font-size: 1.45rem;
@@ -445,8 +444,7 @@ hr {
 
 @media (min-width: 1308px) {
     .title-card {
-        font-size: 43px;
-        letter-spacing: -2px;
+        font-size: 38px;
     }
     .subtitle-card {
         font-size: 1.45rem;
@@ -454,28 +452,37 @@ hr {
     }
 }
 
-
-}
 .card-text > .content-card {
     color: #a7a7a7;
     font-weight: 500;
 }
+
 .text {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 15px;
 }
-@media (min-width: 666px) {
+
+@media (min-width: 375px) {
     .text {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 18px;
     }
 }
+
+@media (min-width: 666px) {
+    .text {
+        font-size: 17px;
+        line-height: 18px;
+    }
+}
+
 @media (min-width: 1025px) {
     .text {
         font-size: 18px;
         line-height: 20px;
     }
 }
+
 .content-card > hr {
     margin: 12px 0;
     border-top: 1px solid rgb(111, 111, 111);
