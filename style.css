@@ -9,12 +9,79 @@
     box-sizing: border-box;
 }
 
+div {
+    background-color: transparent;
+    display: block;
+}
+
+input {
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* Resets end */
+
 html,
 body {
     width: 100%;
     height: 100%;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans';
     font-weight: 400;
     font-style: normal;
     line-height: 150%;
@@ -32,13 +99,21 @@ body {
     font-size: 12px;
 }
 
-div {
-    background-color: transparent;
-    display: block;
+input {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 2px;
+    width: 100%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .14);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .14);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-
-
-/* Resets end */
 
 .container {
     width: 100%;
@@ -125,6 +200,7 @@ div {
     height: 120px;
     min-width: 100px;
     background-color: transparent;
+    display: none;
     top: 0;
     right: 0;
     opacity: 0;
@@ -179,7 +255,7 @@ div {
     cursor: pointer;
 }
 
-.card div > hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
@@ -204,7 +280,7 @@ div {
 .projects {
     padding: 0 10px;
     min-height: 100%;
-    background-color: #2d3032;
+    background-color: #575858;
     border-top: 1px solid #3a3a3a;
 }
 
@@ -227,15 +303,14 @@ div {
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .container-flex {
         flex-direction: row;
     }
 }
 
 .card-text {
-    background-color: #3e4042;
-    border: 1px solid rgba(70, 70, 72, 0.98);
+    background-color: #2b2c2d;
     width: 100%;
     margin-top: 10px;
     padding: 13px;
@@ -247,7 +322,7 @@ div {
         flex-direction: row;
         margin-top: 20px;
         margin-right: 8px;
-        padding: 8px;
+        padding: 17px;
     }
     .card-text:last-child {
         margin-right: 0;
@@ -258,50 +333,93 @@ div {
     .card-text {
         margin-top: 30px;
         margin-right: 15px;
-        padding: 15px;
+        padding: 18px;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1308px) {
     .card-text {
-        margin-top: 70px;
+        margin-top: 50px;
+        margin-right: 15px;
+        padding: 20px;
     }
 }
 
-.card-text > .title-card {
+.title-card {
+    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+    font-size: 25px;
     text-align: left;
-    font-size: 1.6rem;
-    letter-spacing: 0.02rem;
-    line-height: 180%;
-    color: #dedede;
-    font-weight: 600;
+    line-height: normal;
+    color: #FF9800;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle-card {
+    font-family: 'Open Sans Condensed';
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFA726;
     margin-bottom: 4px;
 }
 
+@media (min-width: 375px) {
+    .title-card {
+        font-size: 34px;
+    }
+}
+
 @media (min-width: 666px) {
-    .card-text > .title-card {
-        font-size: 1.4rem;
+    .title-card {
+        font-size: 40px;
+        letter-spacing: normal;
+        margin-bottom: 15px;
+    }
+    .subtitle-card {
+        font-size: 1.2rem;
         letter-spacing: normal;
     }
 }
 
 @media (min-width: 768px) {
-    .card-text > .title-card {
-        font-size: 1.55rem;
+    .title-card {
+        font-size: 39px;
+        letter-spacing: normal;
+    }
+    .subtitle-card {
+        font-size: 1.24rem;
         letter-spacing: normal;
     }
 }
 
 @media (min-width: 950px) {
-    .card-text > .title-card {
-        font-size: 1.6rem;
+    .title-card {
+        font-size: 39px;
+    }
+    .subtitle-card {
+        font-size: 1.3rem;
         letter-spacing: 0.02rem;
     }
 }
 
 @media (min-width: 1025px) {
-    .card-text > .title-card {
-        font-size: 1.9rem;
+    .title-card {
+        font-size: 29px;
+    }
+    .subtitle-card {
+        font-size: 1.45rem;
+        letter-spacing: 0.02rem;
+    }
+}
+
+@media (min-width: 1308px) {
+    .title-card {
+        font-size: 38px;
+    }
+    .subtitle-card {
+        font-size: 1.45rem;
         letter-spacing: 0.02rem;
     }
 }
@@ -312,20 +430,32 @@ div {
 }
 
 .text {
-    font-size: 1.3rem;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+@media (min-width: 375px) {
+    .text {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 @media (min-width: 666px) {
     .text {
-        font-size: 1.1rem;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 18px;
     }
 }
 
 @media (min-width: 1025px) {
     .text {
-        font-size: 1.5rem;
-        line-height: 17px;
+        font-size: 18px;
+        line-height: 20px;
     }
+}
+
+.content-card > hr {
+    margin: 12px 0;
+    border-top: 1px solid rgb(111, 111, 111);
 }
