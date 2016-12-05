@@ -350,7 +350,7 @@ hr {
 
 @media (min-width: 666px) {
     .title-card {
-        font-size: 1.4rem;
+        font-size: 40px;
         letter-spacing: normal;
     }
     .subtitle-card {
@@ -404,7 +404,7 @@ hr {
 }
 @media (min-width: 666px) {
     .text {
-        font-size: 1.1rem;
+        font-size: 15px;
         line-height: 17px;
     }
 }
