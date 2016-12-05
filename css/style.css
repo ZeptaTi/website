@@ -25,38 +25,52 @@ input {
 }
 
 @font-face {
-    font-family: Roboto;
-    src: local(fonts/Roboto/Roboto-Bold.ttf);
-    font-weight: bold;
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
     font-style: normal;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: local(fonts/Roboto/Roboto-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: local(fonts/Roboto/Roboto-Medium.ttf);
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: local(fonts/Roboto/Roboto-Light.ttf);
     font-weight: 300;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: local(fonts/Roboto/Roboto-Thin.ttf);
-    font-weight: 100;
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
     font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondensedLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondensedBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
 }
 
 
@@ -67,7 +81,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans';
     font-weight: 400;
     font-style: normal;
     line-height: 150%;
