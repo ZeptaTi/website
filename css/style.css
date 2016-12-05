@@ -289,7 +289,7 @@ hr {
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .container-flex {
         flex-direction: row;
     }
@@ -308,7 +308,7 @@ hr {
         flex-direction: row;
         margin-top: 20px;
         margin-right: 8px;
-        padding: 8px;
+        padding: 17px;
     }
     .card-text:last-child {
         margin-right: 0;
@@ -319,13 +319,15 @@ hr {
     .card-text {
         margin-top: 30px;
         margin-right: 15px;
-        padding: 15px;
+        padding: 18px;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1308px) {
     .card-text {
-        margin-top: 70px;
+        margin-top: 50px;
+        margin-right: 15px;
+        padding: 20px;
     }
 }
 
@@ -340,10 +342,8 @@ hr {
 
 .subtitle-card {
     text-align: left;
-    font-size: 1.3rem;
-    letter-spacing: 0.02rem;
-    line-height: 180%;
-    color: #dedede;
+    font-size: 20px;
+    color: #F4511E;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -361,7 +361,7 @@ hr {
 
 @media (min-width: 768px) {
     .title-card {
-        font-size: 1.55rem;
+        font-size: 39px;
         letter-spacing: normal;
     }
     .subtitle-card {
@@ -372,8 +372,8 @@ hr {
 
 @media (min-width: 950px) {
     .title-card {
-        font-size: 1.6rem;
-        letter-spacing: 0.02rem;
+        font-size: 33px;
+        line-height: 33px;
     }
     .subtitle-card {
         font-size: 1.3rem;
@@ -383,8 +383,17 @@ hr {
 
 @media (min-width: 1025px) {
     .title-card {
-        font-size: 1.9rem;
+        font-size: 21px;
+    }
+    .subtitle-card {
+        font-size: 1.45rem;
         letter-spacing: 0.02rem;
+    }
+}
+
+@media (min-width: 1308px) {
+    .title-card {
+        font-size: 28px;
     }
     .subtitle-card {
         font-size: 1.45rem;
@@ -399,19 +408,19 @@ hr {
     font-weight: 500;
 }
 .text {
-    font-size: 1.3rem;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 20px;
 }
 @media (min-width: 666px) {
     .text {
-        font-size: 15px;
-        line-height: 17px;
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 @media (min-width: 1025px) {
     .text {
-        font-size: 1.5rem;
-        line-height: 17px;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 .content-card > hr {
