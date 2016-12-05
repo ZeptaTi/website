@@ -60,16 +60,42 @@ input {
 }
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/Open_Sans_Condensed/OpenSans-CondensedLight.ttf') format('truetype');
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf') format('truetype');
     font-style: normal;
+    font-stretch: condensed;
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/Open_Sans_Condensed/OpenSans-CondensedBold.ttf') format('truetype');
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondBold.ttf') format('truetype');
     font-style: normal;
+    font-stretch: condensed;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_Condensed/RobotoCondensed-Light.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: condensed;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: condensed;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: condensed;
     font-weight: 700;
 }
 
@@ -346,11 +372,14 @@ hr {
 }
 
 .title-card {
-    text-align: left;
+    font-family: 'Roboto';
+    font-stretch: condensed;
+    font-weight: 400;
     font-size: 35px;
+    text-align: left;
     line-height: 44px;
-    color: #FF3D00;
-    font-weight: 500;
+    letter-spacing: 0;
+    color: #FF9800;
     margin-bottom: 15px;
 }
 
@@ -407,7 +436,8 @@ hr {
 
 @media (min-width: 1308px) {
     .title-card {
-        font-size: 28px;
+        font-size: 43px;
+        letter-spacing: -2px;
     }
     .subtitle-card {
         font-size: 1.45rem;
