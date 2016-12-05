@@ -375,12 +375,12 @@ hr {
     font-family: 'Roboto';
     font-stretch: condensed;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 27px;
     text-align: left;
     line-height: 44px;
     letter-spacing: 0;
     color: #FF9800;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .subtitle-card {
