@@ -57,9 +57,6 @@ function logoAnimationContructor() {
 
         startFrame = startFrame || 0;
 
-        if (startFrame == 201)
-            frame = startFrame;
-
         if (startFrame > endFrame && startFrame != 201)
             startFrame = endFrame;
 
@@ -67,6 +64,9 @@ function logoAnimationContructor() {
             startFrame = 0;
 
         frame = startFrame || 0;
+
+        if (startFrame == 201)
+            frame = startFrame;
 
         if (!requestFrame)
             drawFrame();
@@ -200,9 +200,11 @@ function logoAnimationContructor() {
 
         var sub = getSubTitle();
 
+        var scroll = getScroll();
+
         var o = Math.min(1, (190 - frame) / 20);
 
-        if (frame > 170 && frame < 201) {
+        if (frame > 170 && frame < 201 && scroll == 0) {
             ajustSubTitle(sub);
 
             sub.style.display = "block";
@@ -420,12 +422,6 @@ function logoAnimationContructor() {
 
     var init = function () {
 
-        resizeCanvas();
-
-        showCardAnimation();
-
-        loadImage();
-
         var timelineCard = document.getElementById("timeLineCard");
 
         timelineCard.addEventListener("mousemove", function (e) {
@@ -447,9 +443,8 @@ function logoAnimationContructor() {
 
             resizeCanvas();
 
-            showCardAnimation();
-
-            ajustMenu();
+            if (frame >= 200)
+                ajustMenu();
 
         }, false);
 
@@ -466,6 +461,16 @@ function logoAnimationContructor() {
 
             ajustMenu();
         });
+
+
+        resizeCanvas();
+
+        loadImage();
+
+        if (getScroll() > 0) {
+            ajustMenu();
+        }
+
 
         if (isMobile)
             startEventsTouch();
