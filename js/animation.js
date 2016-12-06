@@ -83,8 +83,7 @@ function logoAnimationContructor() {
 
         first = false;
 
-        if (!isMobile)
-            showCardAnimation();
+        showCardAnimation();
     };
 
     function drawFrame() {
@@ -282,30 +281,31 @@ function logoAnimationContructor() {
         ajustSubTitle(getSubTitle());
     };
 
-    function ajustCardAnimation() {
-
-        var card = getCardAnimation();
-
-        card.style.display = "block";
-        card.style.position = "absolute";
-    };
-
     function showCardAnimation() {
+
+        if (isMobile)
+            return;
+
         var card = getCardAnimation();
 
         card.style.opacity = 1;
+        card.style.display = "block";
+        card.style.position = "absolute";
     };
 
     function showMenuFixed(show) {
         var menu = document.getElementById("menuFixed");
 
         var canvas = getCanvasFixed();
-        var ctx = getContextFixed();
 
-        ctx.canvas.width = canvasWidth;
-        ctx.canvas.height = "50";
+        if (show) {
+            var ctx = getContextFixed();
 
-        drawLogoFixed();
+            ctx.canvas.width = canvasWidth;
+            ctx.canvas.height = "50";
+
+            drawLogoFixed();
+        }
 
         if (show) {
             menu.style.backgroundColor = "black";
@@ -314,6 +314,7 @@ function logoAnimationContructor() {
             menu.style.backgroundColor = "transparent";
             canvas.style.display = "none";
         }
+
     };
 
     function drawLogoFixed() {
@@ -332,8 +333,10 @@ function logoAnimationContructor() {
 
     function ajustMenu() {
 
-        if (isMobile)
+        if (isMobile) {
+            showMenuFixed(false);
             return;
+        }
 
         var scroll = getScroll();
 
@@ -419,8 +422,7 @@ function logoAnimationContructor() {
 
         resizeCanvas();
 
-        if (!isMobile)
-            ajustCardAnimation();
+        showCardAnimation();
 
         loadImage();
 
@@ -445,7 +447,7 @@ function logoAnimationContructor() {
 
             resizeCanvas();
 
-            ajustCardAnimation();
+            showCardAnimation();
 
             ajustMenu();
 
