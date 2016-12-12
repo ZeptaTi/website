@@ -277,38 +277,49 @@ hr {
 
 /*------------------------------------*/
 
-.projects {
+.container-cards {
     padding: 0 10px;
     min-height: 100%;
     background-color: #2b2c2d;
     border-top: 1px solid #3a3a3a;
 }
 
-@media (min-width: 768px) {
-    .projects {
-        padding: 0 15px;
+@media (min-width: 1025px) {
+    .container-cards {
+        padding: 0 60px 60px 60px;
+        padding-top: 60px;
     }
 }
 
-@media (min-width: 950px) {
-    .projects {
-        padding: 0 30px;
+section > h1 {
+    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+    line-height: normal;
+    color: #D4E157;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1308px) {
+    section > h1 {
+        font-size: 38px;
     }
 }
 
-.container-flex {
+.flex {
     display: flex;
     width: 100%;
-    height: 100%;
-    flex-direction: column;
+    align-items: center;
 }
 
-@media (min-width: 1024px) {
-    .container-flex {
-        flex-direction: row;
-    }
+.card-flex {
+    flex: 1;
 }
 
+
+/*
 .card-text {
     background-color: #2b2c2d;
     width: 100%;
@@ -339,10 +350,16 @@ hr {
 
 @media (min-width: 1308px) {
     .card-text {
-        margin-top: 50px;
-        margin-right: 25px;
-        padding: 20px;
-        max-width: 33.33%;
+        margin: 0;
+        padding: 50px 70px 50px 70px;
+    }
+    .card-text:first-child {
+        margin: 0;
+        padding: 100px 70px 50px 70px;
+    }
+    .card-text:last-child {
+        margin: 0;
+        padding: 50px 70px 100px 70px;
     }
 }
 
@@ -353,10 +370,6 @@ hr {
     text-align: left;
     line-height: normal;
     color: #D4E157;
-    /*
-    color: #D4E157;
-    color: #FF7043;
-    */
     letter-spacing: normal;
     margin-bottom: 10px;
 }
@@ -475,7 +488,6 @@ hr {
     border-top: 1px solid rgb(111, 111, 111);
 }
 
-.gif {
+. .gif {
     height: 200px;
-    width: 100%;
 }
