@@ -318,6 +318,10 @@ section > h1 {
     flex: 1;
 }
 
+.gif {
+    width: 300px;
+}
+
 
 /*
 .card-text {
