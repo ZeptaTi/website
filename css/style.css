@@ -22,6 +22,15 @@
         outline: none;
     }
     
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid rgba(45, 48, 50, 0.67);
+        margin: 0;
+        padding: 0;
+    }
+    
     @font-face {
         font-family: 'Open Sans';
         src: url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
@@ -251,15 +260,6 @@
         cursor: pointer;
     }
     
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid rgba(45, 48, 50, 0.67);
-        margin: 0;
-        padding: 0;
-    }
-    
     .card:hover div > hr,
     .card:hover div {
         -webkit-transition: all .4s ease-in-out;
@@ -281,6 +281,7 @@
     @media(min-width: 320px) {
         .container-cards {
             padding-top: 10px;
+            padding-bottom: 20px;
         }
     }
     
@@ -299,12 +300,13 @@
         line-height: normal;
         color: #D4E157;
         letter-spacing: normal;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     @media (min-width: 1308px) {
         section > h1 {
             font-size: 43px;
+            margin-bottom: 10px;
         }
     }
     
@@ -357,10 +359,12 @@
         font-size: 17px;
         line-height: 20px;
         padding: 10px 10px 0 10px;
+        text-align: center;
     }
     
     @media (min-width: 1025px) {
         .text {
+            text-align: left;
             padding: 0 30px;
             font-size: 20px;
             line-height: 25px;
