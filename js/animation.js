@@ -24,7 +24,7 @@ function logoAnimationContructor() {
     var logoControler = logoConstructor();
     var logoWidth = 0;
     var alphaLogo = 0;
-    var first = true;
+    var first = true
 
     var isMobile = window.mobileAndTabletcheck();
 
@@ -454,6 +454,8 @@ function logoAnimationContructor() {
 
         window.addEventListener("scroll", function (e) {
 
+            playNextVideo();
+
             if (isMobile) {
                 frame = 200;
                 return;
@@ -467,10 +469,8 @@ function logoAnimationContructor() {
 
         loadImage();
 
-        if (getScroll() > 0) {
+        if (getScroll() > 0)
             ajustMenu();
-        }
-
 
         if (isMobile)
             startEventsTouch();
@@ -481,7 +481,6 @@ function logoAnimationContructor() {
         init: init
     }
 };
-
 
 function getRequestAnimationFrame() {
     return window.requestAnimationFrame ||

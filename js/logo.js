@@ -8,6 +8,9 @@ function logoConstructor() {
 
         context.fillStyle = color;
 
+        if (height < 0)
+            return;
+
         var f = height / 1235;
 
         x = x - 75 * f;

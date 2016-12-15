@@ -12,6 +12,8 @@
     <script async src="js/logo.js" type="text/javascript"></script>
     <script async src="js/util.js" type="text/javascript"></script>
     <script async src="js/animation.js" type="text/javascript"></script>
+    <script async src="js/videos.js" type="text/javascript"></script>
+
     <title>Zepta</title>
 </head>
 
@@ -40,56 +42,125 @@
             <h1>Desenvolvimento de sistemas</h1>
 
             <div class="flex">
+
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+
+                    <div class="container-video" onclick="playPause(this, true)">
+
+                        <video id="uploadVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+
+                    </div>
+
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
+
+
                 </div>
 
-                <hr>
+                <div class="hr">
+                    <hr>
+                </div>
 
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+
+                    <div class="container-video" onclick="playPause(this, true)">
+
+                        <video id="searchVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+
+                    </div>
+
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
+
+
                 </div>
 
             </div>
-
         </section>
 
         <section>
-            <h1>Design interativo</h1>
+            <h1>Desenvolvimento de sistemas</h1>
 
             <div class="flex">
+
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+
+                    <div class="container-video" onclick="playPause(this, true)">
+
+                        <video id="gridVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+
+                    </div>
+
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
+
+
                 </div>
 
-                <hr>
+                <div class="hr">
+                    <hr>
+                </div>
 
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+
+                    <div class="container-video" onclick="playPause(this, true)">
+
+                        <video id="zipcodeVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+
+                    </div>
+
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
+
+
                 </div>
 
             </div>
-
         </section>
 
+        <!--
         <section>
-            <h1>Consultoria</h1>
+            <h1>Desenvolvimento de sistemas</h1>
 
             <div class="flex">
+
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+                    <div class="container-video" onclick="playPause(this, true)">
+                        <video id="uploadVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+                    </div>
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
@@ -98,7 +169,14 @@
                 <hr>
 
                 <div class="card-flex">
-                    <img class="gif" src="img/insta.gif" />
+                    <div class="container-video" onclick="playPause(this, true)">
+                        <video id="searchVideo">
+                            <source src="img/upload.mp4" type="video/mp4">
+                        </video>
+                        <div class="start-video">
+                            <span class="icon">&#xea15;</span>
+                        </div>
+                    </div>
                     <div class="text">
                         A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
                     </div>
@@ -107,6 +185,7 @@
             </div>
 
         </section>
+-->
     </div>
 
     <div id="modalSpinner" class="modal">
@@ -125,7 +204,28 @@
 
 </html>
 
-<!-- <br> Sempre voltados para o JavaScript, o nosso maior interesse são em trabalhos quem mesclem algoritimos e design gráfico. 
+
+
+<!-- 
+
+
+
+                <div class="card-flex">
+
+                    <div>
+                        <div class="playVideo">.</div>
+                        <video id="video1" width="470" height="264" poster="img/background.jpg" onclick="playPause()">
+                            <source src="img/upload.mp4" width="470" height="264" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="text">
+                        A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas.
+                    </div>
+                </div>
+
+
+<br> Sempre voltados para o JavaScript, o nosso maior interesse são em trabalhos quem mesclem algoritimos e design gráfico. 
 
                     <span>A Zepta é uma software house que acredita em um software inovador, construidos por equipes pequenas. <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
