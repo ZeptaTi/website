@@ -352,6 +352,7 @@ section > h1 {
     .flex {
         display: flex;
         flex: 1;
+        justify-content: space-between;
     }
 }
 
@@ -362,7 +363,7 @@ section > h1 {
 @media (min-width: 1308px) {
     .card-flex {
         display: flex;
-        width: 50%;
+        width: 48%;
     }
 }
 
