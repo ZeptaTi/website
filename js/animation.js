@@ -454,8 +454,6 @@ function logoAnimationContructor() {
 
         window.addEventListener("scroll", function (e) {
 
-            playNextVideo();
-
             if (isMobile) {
                 frame = 200;
                 return;
