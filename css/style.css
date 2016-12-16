@@ -313,17 +313,10 @@ input {
 }
 
 section {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
-section:first-child {
-    margin-top: 0;
-}
-
-section:last-child {
-    margin-bottom: 0;
-}
+section:last-child {}
 
 section > h1 {
     font-family: 'Open Sans Condensed';
@@ -363,7 +356,7 @@ section > h1 {
 @media (min-width: 1308px) {
     .card-flex {
         display: flex;
-        width: 48%;
+        width: 50%;
     }
 }
 
@@ -424,7 +417,7 @@ section > h1 {
         padding: 0 30px;
         font-size: 20px;
         line-height: 25px;
-        width: 50%;
+        width: 48%;
     }
 }
 
@@ -444,266 +437,4 @@ section > h1 {
         padding: 0;
         margin: 0;
     }
-}
-
-
-/*
-.flex {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-}
-
-@media (min-width: 375px) {
-    .flex {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 1025px) {
-    .flex {
-        flex-direction: row;
-    }
-}
-
-.card-flex {
-    margin-bottom: 20px;
-    height: 100%;
-}
-
-@media(min-width: 320px) {
-    .card-flex {
-        margin-bottom: 20px;
-        height: 100%;
-        width: 100%;
-    }
-    .card-flex:last-child {
-        margin-top: 20px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .card-flex {
-        display: flex;
-        margin: 0;
-        flex: 1;
-        width: 50%;
-    }
-    .card-flex:last-child {
-        margin-top: 0;
-    }
-}
-
-.container-video {
-    width: 50%;
-}
-
-.container-video > video {
-    position: absolute;
-    z-index: 1;
-}
-
-@media(min-width: 375px) {
-    .container-video {
-        width: 100%;
-        position: relative;
-        height: 100%;
-        display: table;
-    }
-    .container-video>video {
-        z-index: 1;
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.start-video {
-    width: 390px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.78);
-    z-index: 2;
-}
-
-*/
-
-
-/*
-.card-text {
-background-color: #2b2c2d;
-width: 100%;
-margin-top: 26px;
-padding: 13px;
-border-radius: 2px;
-}
-
-@media (min-width: 768px) {
-.card-text {
-    flex-direction: row;
-    margin-top: 20px;
-    margin-right: 8px;
-    padding: 17px;
-}
-.card-text:last-child {
-    margin-right: 0;
-}
-}
-
-@media (min-width: 950px) {
-.card-text {
-    margin-top: 30px;
-    margin-right: 15px;
-    padding: 18px;
-}
-}
-
-@media (min-width: 1308px) {
-.card-text {
-    margin: 0;
-    padding: 50px 70px 50px 70px;
-}
-.card-text:first-child {
-    margin: 0;
-    padding: 100px 70px 50px 70px;
-}
-.card-text:last-child {
-    margin: 0;
-    padding: 50px 70px 100px 70px;
-}
-}
-
-.title-card {
-font-family: 'Open Sans Condensed';
-font-weight: 400;
-font-size: 25px;
-text-align: left;
-line-height: normal;
-color: #D4E157;
-letter-spacing: normal;
-margin-bottom: 10px;
-}
-
-.subtitle-card {
-font-family: 'Open Sans Condensed';
-text-align: left;
-font-size: 20px;
-font-weight: 400;
-color: ##c1c1c1;
-margin-bottom: 4px;
-}
-
-@media (min-width: 360px) {
-.title-card {
-    font-size: 33px;
-}
-.subtitle-card {
-    font-size: 21px;
-}
-}
-
-@media (min-width: 375px) {
-.title-card {
-    font-size: 34px;
-}
-}
-
-@media (min-width: 666px) {
-.title-card {
-    font-size: 40px;
-    letter-spacing: normal;
-    margin-bottom: 15px;
-}
-.subtitle-card {
-    font-size: 27px;
-    margin-bottom: 8px;
-    letter-spacing: normal;
-}
-}
-
-@media (min-width: 768px) {
-.title-card {
-    font-size: 39px;
-    letter-spacing: normal;
-}
-.subtitle-card {
-    font-size: 28px;
-    line-height: 28px;
-}
-}
-
-@media (min-width: 950px) {
-.title-card {
-    font-size: 39px;
-}
-.subtitle-card {
-    font-size: 29px;
-    line-height: 29px;
-}
-}
-
-@media (min-width: 1025px) {
-.title-card {
-    font-size: 29px;
-}
-.subtitle-card {
-    font-size: 26px;
-    line-height: 26px;
-}
-}
-
-@media (min-width: 1308px) {
-.title-card {
-    font-size: 38px;
-}
-.subtitle-card {
-    font-size: 28px;
-    line-height: 28px;
-}
-}
-
-.card-text > .content-card {
-color: #a7a7a7;
-font-weight: 500;
-}
-
-.text {
-font-size: 13px;
-line-height: 15px;
-}
-
-@media (min-width: 375px) {
-.text {
-    font-size: 16px;
-    line-height: 18px;
-}
-}
-
-@media (min-width: 666px) {
-.text {
-    font-size: 17px;
-    line-height: 18px;
-}
-}
-
-@media (min-width: 1025px) {
-.text {
-    font-size: 19px;
-    line-height: 20px;
-}
-}
-
-.content-card > hr {
-margin: 12px 0;
-border-top: 1px solid rgb(111, 111, 111);
-}
-
-. .gif {
-height: 200px;
 }
