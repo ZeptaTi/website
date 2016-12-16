@@ -1,18 +1,39 @@
 var confVideos = [];
 
-var videos = document.getElementsByTagName("video");
-var qtdVideos = videos.length;
+function createConfVideos() {
 
-for (var i = 0; i < qtdVideos; i++) {
+    var videos = document.getElementsByTagName("video");
+    var qtdVideos = videos.length;
 
-    var id = videos[i].id;
+    for (var i = 0; i < qtdVideos; i++) {
 
-    if (!confVideos[id])
-        confVideos[id] = {
-            id: id,
-            started: false
-        };
-}
+        var id = videos[i].id;
+
+        var exist = false;
+        for (var ii = 0; ii < confVideos.length; ii++) {
+
+            if (confVideos[ii].id == id) {
+                exist = true
+                break;
+            }
+        }
+
+        if (!exist)
+            confVideos.push({
+                id: id,
+                started: false
+            });
+    }
+
+};
+
+createConfVideos();
+
+window.addEventListener("scroll", function (e) {
+
+    playNextVideo();
+
+});
 
 
 function playNextVideo() {
