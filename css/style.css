@@ -330,6 +330,17 @@ section > h1 {
     width: 100%;
 }
 
+section > h2 {
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    width: 100%;
+}
+
 @media (min-width: 1308px) {
     section > h1 {
         font-size: 43px;
@@ -362,6 +373,7 @@ section > h1 {
 
 .container-video {
     position: relative;
+    border: 3px solid #464646;
 }
 
 .container-video > video {
