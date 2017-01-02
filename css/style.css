@@ -305,6 +305,13 @@ input {
     }
 }
 
+@media (min-width: 768px) {
+    .container-cards {
+        padding: 0 30px 1px 30px;
+        padding-top: 30px;
+    }
+}
+
 @media (min-width: 1025px) {
     .container-cards {
         padding: 0 60px 60px 60px;
@@ -321,7 +328,7 @@ section:last-child {}
 section > h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
-    font-size: 29px;
+    font-size: 30px;
     text-align: left;
     line-height: normal;
     color: #D4E157;
@@ -331,14 +338,34 @@ section > h1 {
 }
 
 section > h2 {
-    font-size: 23px;
+    font-size: 17px;
     font-weight: normal;
     letter-spacing: normal;
-    line-height: 27px;
-    text-align: left;
+    line-height: 18px;
+    text-align: center;
     margin-bottom: 25px;
     margin-top: 15px;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    section > h1 {
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+    section > h2 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    section > h1 {
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+    section > h2 {
+        text-align: left;
+    }
 }
 
 @media (min-width: 1308px) {
@@ -352,7 +379,7 @@ section > h2 {
     width: 100%;
 }
 
-@media (min-width: 1308px) {
+@media (min-width: 1024px) {
     .flex {
         display: flex;
         flex: 1;
@@ -364,7 +391,13 @@ section > h2 {
     width: 100%;
 }
 
-@media (min-width: 1308px) {
+@media (min-width: 1024px) {
+    .card-flex {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1440px) {
     .card-flex {
         display: flex;
         width: 50%;
@@ -374,6 +407,24 @@ section > h2 {
 .container-video {
     position: relative;
     border: 3px solid #464646;
+}
+
+@media(min-width: 768px) {
+    .container-video {
+        margin: 0 114px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container-video {
+        margin: 0 57px;
+    }
+}
+
+@media(min-width: 1140px) {
+    .container-video {
+        margin: 0;
+    }
 }
 
 .container-video > video {
@@ -423,7 +474,7 @@ section > h2 {
     text-align: center;
 }
 
-@media (min-width: 1308px) {
+@media (min-width: 1440px) {
     .text {
         text-align: left;
         padding: 0 30px;
@@ -443,7 +494,7 @@ section > h2 {
     border-top: 1px solid rgb(111, 111, 111);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .hr {
         display: none;
         padding: 0;
