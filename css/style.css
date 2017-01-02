@@ -375,6 +375,13 @@ section > h2 {
     }
 }
 
+@media (min-width: 1440px) {
+    section > h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
 .flex {
     width: 100%;
 }
