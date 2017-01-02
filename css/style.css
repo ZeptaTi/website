@@ -430,7 +430,7 @@ section > h2 {
 
 @media(min-width: 1140px) {
     .container-video {
-        margin: 0;
+        margin: 0 50px;
     }
 }
 
