@@ -99,6 +99,7 @@ body {
     height: 100%;
     background-color: black;
     font-family: 'Open Sans';
+    font-size: 100%;
     font-weight: 400;
     font-style: normal;
     line-height: 150%;
@@ -108,12 +109,12 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 body {
     overflow: hidden;
-    font-size: 12px;
+    font-size: 100%;
 }
 
 input {
@@ -292,35 +293,37 @@ input {
 }
 
 .container-cards {
-    padding: 0 10px;
     min-height: 100%;
     background-color: #2b2c2d;
     border-top: 1px solid #3a3a3a;
-}
-
-@media(min-width: 320px) {
-    .container-cards {
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container-cards {
-        padding: 0 30px 1px 30px;
-        padding-top: 30px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .container-cards {
-        padding: 0 30px 30px 30px;
-        padding-top: 60px;
-    }
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
 section {
-    margin-bottom: 70px;
+    max-width: 79.0625rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    display: table;
+}
+
+@media (min-width: 950px) {
+    section {
+        max-width: 52.0625rem;
+    }
+}
+
+@media (min-width: 1175px) {
+    section {
+        max-width: 68.0625rem;
+    }
+}
+
+@media (min-width: 1365px) {
+    section {
+        max-width: 79.0625rem;
+    }
 }
 
 section:last-child {}
@@ -328,7 +331,7 @@ section:last-child {}
 section > h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
-    font-size: 30px;
+    font-size: 47px;
     text-align: left;
     line-height: normal;
     color: #D4E157;
@@ -338,47 +341,17 @@ section > h1 {
 }
 
 section > h2 {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: normal;
     letter-spacing: normal;
-    line-height: 18px;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-top: 15px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    section > h1 {
-        font-size: 43px;
-        margin-bottom: 10px;
-    }
+@media (max-width: 767px) {
     section > h2 {
-        text-align: left;
-    }
-}
-
-@media (min-width: 1024px) {
-    section > h1 {
-        font-size: 43px;
-        margin-bottom: 10px;
-    }
-    section > h2 {
-        text-align: left;
-    }
-}
-
-@media (min-width: 1308px) {
-    section > h1 {
-        font-size: 43px;
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 1440px) {
-    section > h2 {
-        font-size: 20px;
-        line-height: 25px;
+        text-align: center;
     }
 }
 
@@ -386,63 +359,44 @@ section > h2 {
     width: 100%;
 }
 
-@media (min-width: 1024px) {
-    .flex {
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
-    }
-}
-
 .card-flex {
-    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
     .card-flex {
-        width: 46%;
+        flex-wrap: wrap;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
     .card-flex {
-        display: flex;
+        max-width: 100%;
+        display: inherit;
+        float: left;
         width: 50%;
+        margin: 0;
     }
 }
 
 .container-video {
     position: relative;
     border: 3px solid #464646;
+    float: left;
+    margin-right: 40px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 1366px) {
     .container-video {
-        margin: 0 114px;
-    }
-}
-
-@media(min-width: 1024px) {
-    .container-video {
-        margin: 0 57px;
-    }
-}
-
-@media(min-width: 1140px) {
-    .container-video {
-        margin: 0 50px;
-    }
-}
-
-@media(min-width: 1440px) {
-    .container-video {
-        margin: 0;
+        margin-right: 20px;
     }
 }
 
 .container-video > video {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 147px;
     top: 0;
     display: flex;
     text-align: center;
@@ -451,13 +405,13 @@ section > h2 {
 
 .start-video {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.78);
 }
 
@@ -481,36 +435,29 @@ section > h2 {
 }
 
 .text {
-    font-size: 17px;
+    text-align: left;
+    padding-right: 20px;
+    font-size: 16px;
     line-height: 20px;
-    padding: 15px 5px 0 5px;
-    text-align: center;
+    width: 48%;
+    max-height: 153px;
+    display: flex;
+    align-items: center;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 767px) {
     .text {
-        text-align: left;
-        padding: 0 30px;
-        font-size: 20px;
-        line-height: 20px;
-        width: 48%;
+        padding: 0;
+        text-align: center;
+        padding-top: 30px;
+        float: none;
+        width: 100%;
     }
 }
 
-.hr {
-    padding: 0 60px;
-}
-
-.hr > hr {
-    width: 100%;
-    margin: 20px 0;
-    border-top: 1px solid rgb(111, 111, 111);
-}
-
-@media (min-width: 1024px) {
-    .hr {
-        display: none;
-        padding: 0;
-        margin: 0;
+@media (min-width: 1365px) {
+    .text {
+        float: left;
+        display: block;
     }
 }
