@@ -33,6 +33,11 @@ hr {
     padding: 0;
 }
 
+.icon {
+    font-family: "icomoon";
+    font-size: 20px;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
@@ -189,17 +194,10 @@ input {
 
 .subtitle {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 0.69rem;
     line-height: 7px;
     font-weight: 100;
     opacity: 0;
-}
-
-@media (max-width: 360px) {
-    .subtitle {
-        font-size: 1.2rem;
-        line-height: 13px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -210,7 +208,7 @@ input {
 
 @media (min-width: 950px) {
     .subtitle {
-        font-size: 2.5rem;
+        font-size: 1.3rem;
         line-height: 26px;
     }
 }
@@ -260,7 +258,7 @@ input {
 
 @media (min-width: 1025px) {
     .card p {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
 }
@@ -287,51 +285,27 @@ input {
 
 /*------------------------------------*/
 
-.icon {
-    font-family: "icomoon";
-    font-size: 20px;
-}
-
 .container-cards {
     min-height: 100%;
     background-color: #2b2c2d;
-    border-top: 1px solid #3a3a3a;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
-    max-width: 79.0625rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    display: table;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-bottom: 10px;
 }
-
-@media (min-width: 950px) {
-    section {
-        max-width: 52.0625rem;
-    }
-}
-
-@media (min-width: 1175px) {
-    section {
-        max-width: 68.0625rem;
-    }
-}
-
-@media (min-width: 1365px) {
-    section {
-        max-width: 79.0625rem;
-    }
-}
-
-section:last-child {}
 
 section > h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
-    font-size: 47px;
+    font-size: 1.9rem;
     text-align: left;
     line-height: normal;
     color: #D4E157;
@@ -347,12 +321,7 @@ section > h2 {
     letter-spacing: normal;
     margin-bottom: 40px;
     width: 100%;
-}
-
-@media (max-width: 767px) {
-    section > h2 {
-        text-align: center;
-    }
+    text-align: center;
 }
 
 .flex {
@@ -363,35 +332,18 @@ section > h2 {
     display: flex;
     margin-bottom: 30px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
-@media (max-width: 767px) {
-    .card-flex {
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 1366px) {
-    .card-flex {
-        max-width: 100%;
-        display: inherit;
-        float: left;
-        width: 50%;
-        margin: 0;
-    }
+.card-flex:last-child {
+    margin-bottom: 10px;
 }
 
 .container-video {
     position: relative;
     border: 3px solid #464646;
     float: left;
-    margin-right: 40px;
-}
-
-@media (min-width: 1366px) {
-    .container-video {
-        margin-right: 20px;
-    }
 }
 
 .container-video > video {
@@ -436,28 +388,101 @@ section > h2 {
 
 .text {
     text-align: left;
-    padding-right: 20px;
     font-size: 16px;
     line-height: 20px;
-    width: 48%;
     max-height: 153px;
     display: flex;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
 }
 
-@media (max-width: 767px) {
-    .text {
-        padding: 0;
-        text-align: center;
-        padding-top: 30px;
-        float: none;
-        width: 100%;
+@media (min-width: 414px) {
+    section {
+        padding: 0 1.75rem;
     }
 }
 
-@media (min-width: 1365px) {
-    .text {
+@media (min-width: 768px) {
+    .container-cards {
+        min-height: 100%;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    section {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        display: table;
+    }
+    section > h1 {
+        font-size: 47px;
+        text-align: left;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    section > h2 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+        letter-spacing: normal;
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: left;
+    }
+    .card-flex {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .container-video {
+        position: relative;
+        border: 3px solid #464646;
         float: left;
-        display: block;
+        margin-right: 20px;
+    }
+    .text {
+        width: 48%;
+        float: left;
+        text-align: left;
+        align-items: center;
+        padding: 0;
+        padding-right: 20px;
+        max-height: 153px;
+    }
+}
+
+@media (min-width: 950px) {
+    section {
+        max-width: 52.0625rem;
+    }
+}
+
+@media (min-width: 1175px) {
+    section {
+        max-width: 68.0625rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container-cards {
+        margin: 0;
+        padding: 0;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    section {
+        max-width: 79.0625rem;
+    }
+    .card-flex {
+        max-width: 100%;
+        display: inherit;
+        float: left;
+        width: 50%;
+        margin: 0;
+        flex-wrap: nowrap;
+        padding-bottom: 50px;
     }
 }
