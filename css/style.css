@@ -302,6 +302,10 @@ section {
     padding-bottom: 10px;
 }
 
+section:last-child {
+    padding-bottom: 80px;
+}
+
 section > h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
@@ -314,18 +318,18 @@ section > h1 {
     width: 100%;
 }
 
-section > h2 {
+section > p {
     font-size: 17px;
-    line-height: 28px;
+    line-height: 34px;
     font-weight: normal;
     letter-spacing: normal;
-    margin-bottom: 40px;
-    width: 100%;
+    width: 67%;
     text-align: center;
 }
 
 .flex {
     width: 100%;
+    padding-top: 40px;
 }
 
 .card-flex {
@@ -427,8 +431,9 @@ section > h2 {
         margin-bottom: 20px;
         width: 100%;
     }
-    section > h2 {
+    section > p {
         text-align: left;
+        width: 84%;
     }
     .card-flex {
         display: flex;
