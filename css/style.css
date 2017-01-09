@@ -409,7 +409,6 @@ section > p {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 15px;
 }
 
 .container-contact {
@@ -420,6 +419,9 @@ section > p {
     section > p {
         text-align: left;
         width: 100%;
+    }
+    .text {
+        margin-top: 15px;
     }
 }
 
@@ -469,6 +471,7 @@ section > p {
         text-align: left;
         align-items: center;
         padding: 0;
+        margin: 0;
         padding-right: 20px;
         max-height: 153px;
     }
