@@ -409,11 +409,18 @@ section > p {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .container-contact {
     min-height: 100%;
+}
+
+@media (min-width: 320px) {
+    section > p {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 @media (min-width: 414px) {
