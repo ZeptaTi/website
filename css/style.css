@@ -316,7 +316,8 @@ section:last-child {
     padding-bottom: 80px;
 }
 
-section > h1 {
+section > h1,
+.container-contact > h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
     font-size: 1.9rem;
@@ -338,8 +339,11 @@ section > p {
 }
 
 .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .card-flex {
@@ -422,8 +426,14 @@ section > p {
     background-color: #262627;
 }
 
+.container-contact > section {
+    padding-top: 0px;
+}
+
 .aligner-contact {
     width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .group-contact {
@@ -452,12 +462,23 @@ section > p {
 
 .email {
     display: block;
-    line-height: 3rem;
+    line-height: 2rem;
+}
+
+.phone {
+    display: block;
+    line-height: 2rem;
 }
 
 .skype {
     display: block;
-    line-height: 3rem;
+    line-height: 2rem;
+}
+
+.skype > .icon {
+    float: left;
+    margin-top: 2px;
+    margin-right: 12px;
 }
 
 @media (min-width: 320px) {
@@ -474,6 +495,10 @@ section > p {
     section {
         padding: 0 1.75rem;
     }
+}
+
+@media (min-width: 640px) {
+    .
 }
 
 @media (min-width: 768px) {
@@ -531,7 +556,7 @@ section > p {
 
 @media (min-width: 1175px) {
     section {
-        max-width: 68.0625rem;
+        max-width: 60.0625rem;
     }
 }
 
@@ -543,20 +568,18 @@ section > p {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
     }
-    section {
-        max-width: 86.0625rem;
-    }
     .card-flex {
         max-width: 100%;
         display: inherit;
         float: left;
-        width: 50%;
+        width: 100%;
         margin: 0;
         flex-wrap: nowrap;
         padding-bottom: 50px;
     }
     .text {
         padding-right: 34px;
-        display: block;
+        display: flex;
+        text-align: center;
     }
 }
