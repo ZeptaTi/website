@@ -310,6 +310,7 @@ section {
     padding-left: .75rem;
     padding-right: .75rem;
     padding-bottom: 10px;
+    padding-top: 60px;
 }
 
 section:last-child {
@@ -339,7 +340,7 @@ section > p {
 }
 
 .content {
-    padding: 0 5rem;
+    padding: 0;
 }
 
 .paragraph {
@@ -422,7 +423,6 @@ section > p {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%;
 }
 
 .container-contact {
@@ -512,20 +512,24 @@ section > p {
 
 @media (min-width: 414px) {
     section {
-        padding: 0 1.75rem;
+        padding-top: 60px;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
     }
 }
 
 @media (min-width: 640px) {
-    .
+    section > h1 {
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 768px) {
     .container-cards,
     .container-contact {
         min-height: 100%;
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     section {
         padding: 0;
@@ -544,26 +548,24 @@ section > p {
         text-align: left;
         width: 84%;
     }
+    .content {
+        padding: 0 2rem;
+    }
     .card-flex {
-        display: flex;
+        display: block;
         margin-bottom: 30px;
-        justify-content: center;
     }
     .container-video {
         position: relative;
         border: 3px solid #464646;
         float: left;
-        margin-right: 20px;
+        margin-right: 40px;
     }
     .text {
-        width: 66%;
-        float: left;
-        text-align: left;
-        align-items: center;
+        text-align: center;
         padding: 0;
         margin: 0;
-        padding-right: 20px;
-        max-height: 153px;
+        height: 153px;
     }
 }
 
@@ -571,15 +573,16 @@ section > p {
     section {
         max-width: 52.0625rem;
     }
+    .text {
+        padding: 0;
+    }
 }
 
 @media (min-width: 1175px) {
     section {
         max-width: 60.0625rem;
     }
-    .text {
-        width: 59%;
-    }
+    .text {}
 }
 
 @media (min-width: 1366px) {
@@ -590,19 +593,15 @@ section > p {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
     }
+    .content {
+        padding: 0 5rem;
+    }
     .card-flex {
-        max-width: 100%;
-        display: inherit;
-        float: left;
         width: 100%;
         margin: 0;
-        flex-wrap: nowrap;
         padding-bottom: 70px;
     }
     .text {
-        padding-right: 34px;
-        display: flex;
         text-align: center;
-        width: 66%;
     }
 }
