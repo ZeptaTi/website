@@ -361,7 +361,7 @@ section > p {
     margin-bottom: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .card-flex:last-child {
@@ -577,6 +577,9 @@ section > p {
     section {
         max-width: 60.0625rem;
     }
+    .text {
+        width: 59%;
+    }
 }
 
 @media (min-width: 1366px) {
@@ -600,5 +603,6 @@ section > p {
         padding-right: 34px;
         display: flex;
         text-align: center;
+        width: 66%;
     }
 }
