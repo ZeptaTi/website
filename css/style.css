@@ -338,6 +338,14 @@ section > p {
     text-align: center;
 }
 
+.content {}
+
+.paragraph {
+    font-size: 17px;
+    line-height: 34px;
+    padding: 30px 0;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -355,7 +363,7 @@ section > p {
 }
 
 .card-flex:last-child {
-    margin-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .container-video {
@@ -424,6 +432,15 @@ section > p {
     align-items: center;
     justify-content: center;
     background-color: #262627;
+    flex-direction: column;
+}
+
+.container-contact > h1 {
+    max-width: 60.0625rem;
+    font-size: 47px;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .container-contact > section {
@@ -537,7 +554,7 @@ section > p {
         margin-right: 20px;
     }
     .text {
-        width: 48%;
+        width: 66%;
         float: left;
         text-align: left;
         align-items: center;
@@ -575,7 +592,7 @@ section > p {
         width: 100%;
         margin: 0;
         flex-wrap: nowrap;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
     .text {
         padding-right: 34px;
